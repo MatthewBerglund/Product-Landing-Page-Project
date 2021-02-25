@@ -22,7 +22,7 @@ p {
     line-height: 1.5;
 }
 
-/* --- HEADER --- */ 
+/* --- HEADER --- */
 header {
     position: fixed;
     top: 0;
@@ -109,11 +109,12 @@ main {
 /* --- FEATURES SECTION --- */
 .features {
     width: 100%;
+    max-width: 800px;
     height: auto;
     /* border: 2px solid yellow; */
     /* background-color: rgba(255, 255, 0, 0.493); */
     padding: 0 15px;
-    margin-bottom: 60px;
+    margin: 0 auto 60px auto;
 }
 
 .features-heading {
@@ -146,6 +147,10 @@ main {
 
 
 /* --- HOW IT WORKS SECTION --- */
+.how-container {
+    text-align: center;
+}
+
 .how-heading {
     font-weight: 400;
     font-size: 1.5rem;
@@ -155,6 +160,7 @@ main {
 
 .video {
     width: 100%;
+    max-width: 560px;
     /* height: auto; */
     /* border: 2px solid lime;
     background-color: rgba(0, 255, 0, 0.5); */
@@ -164,15 +170,20 @@ main {
 /* --- PLANS SECTIONS --- */
 .plans {
     width: 100%;
+    max-width: 1150px;
     height: auto;
     /* border: 2px solid purple; */
     /* background-color: rgba(128, 0, 128, 0.356); */
     margin-bottom: 60px;
+    margin-right: auto;
+    margin-left: auto;
     padding: 0 15px;
 }
 
 .plan {
-    width: 300px;
+    min-width: 300px;
+    max-width: 300px;
+    /* width: 300px; */
     height: auto;
     padding: 15px 20px;
     background-color: rgb(250, 250, 250);
@@ -256,6 +267,8 @@ main {
 }
 
 .order-form {
+    max-width: 600px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -278,7 +291,7 @@ main {
     border: 1px solid rgb(230, 230, 230);
     border-radius: 5px;
     outline: none;
-    
+
 }
 
 .form-input:focus {
@@ -290,6 +303,7 @@ main {
     border: 1px solid transparent;
     border-radius: 5px;
     background-color: #8CD4A2;
+    transition: all 0.2s;
 }
 
 .submit-btn:hover {
@@ -319,4 +333,29 @@ footer {
 
 .footer-link:hover {
     text-decoration: underline;
+}
+
+
+/* --- STYLES MIN-WIDTH 992px --- */
+
+@media all and (min-width: 992px) {
+    header {
+        flex-direction: row;
+    }
+
+    main {
+        margin-top: 121px;
+        padding-top: 30px;
+    }
+
+    .plans-flex {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .plan {
+        margin: 0;
+        flex-basis: 300px;
+    }
 }
