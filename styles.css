@@ -170,18 +170,12 @@ main {
     padding: 0 15px;
 }
 
-.plans-heading {
-    font-size: 1.5rem;
-    font-weight: 400;
-    text-align: center;
-    margin-bottom: 25px;
-}
-
 .plan {
-    width: 345px;
+    width: 300px;
     height: auto;
-    padding: 25px 20px;
+    padding: 15px 20px;
     background-color: rgb(250, 250, 250);
+    border: 1px solid rgb(196, 196, 196);
     border-radius: 5px;
     margin: 0 auto 30px auto;
     display: flex;
@@ -190,29 +184,54 @@ main {
     align-items: center;
 }
 
-.gricia {
-    border: 1px solid rgb(175, 175, 175);
+.plans-heading {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 25px;
 }
 
-.carbonara {
-    border: 1px solid #ffd578;
-}
-
-.amatriciana {
-    border: 1px solid #ea5e57;
+.icon-title-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid blue; */
 }
 
 .plan-icon {
-    width: 60px;
-    height: 60px;
+    width: 45px;
+    height: 45px;
+    /* border: 1px solid red; */
 }
 
 .plan-title {
     font-family: 'Homemade Apple', cursive;
-    font-size: 2rem;
+    font-size: 1.4rem;
+    padding: 0 15px;
     /* border: 1px solid black; */
-    padding-top: 10px;
+    /* padding-top: 10px; */
 }
+
+.plan-description {
+    margin: 25px 0 15px 0;
+    /* border: 1px solid red; */
+}
+
+.plan-price {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    /* border: 1px solid green; */
+}
+
+.plan-btn {
+    padding: 8px 40px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background-color: #ffd578;
+}
+
+
 
 .plan-description {
     text-align: center;
