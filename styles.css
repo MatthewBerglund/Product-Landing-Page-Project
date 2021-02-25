@@ -39,7 +39,7 @@ header {
 
 .logo-brand-container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     /* border: 2px solid orangered; */
     /* background-color: rgba(255, 68, 0, 0.466); */
@@ -48,6 +48,7 @@ header {
 .brand-name {
     font-family: 'IM Fell Great Primer', serif;
     font-size: 1.3rem;
+    padding: 0 15px;
     /* border: 2px solid black; */
 }
 
@@ -72,9 +73,9 @@ header {
     text-decoration: none;
     color: black;
     /* border: 1px solid red; */
-    width: 130px;
+    /* width: 130px; */
     text-align: center;
-    padding: 5px 0;
+    padding: 5px 15px;
     transition: all 0.2s;
 }
 
@@ -229,9 +230,13 @@ main {
     border: 1px solid transparent;
     border-radius: 5px;
     background-color: #ffd578;
+    transition: all 0.2s;
 }
 
-
+.plan-btn:hover {
+    border-color: #c5a45d;
+    cursor: pointer;
+}
 
 .plan-description {
     text-align: center;
@@ -289,6 +294,7 @@ main {
 
 .submit-btn:hover {
     border: 1px solid #598666;
+    cursor: pointer;
 }
 
 
