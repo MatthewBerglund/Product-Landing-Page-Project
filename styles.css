@@ -24,15 +24,14 @@ p {
 
 /* --- HEADER --- */
 header {
+    background-color: white;
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
-    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: white;
     padding: 15px;
     border-bottom: 1px solid rgb(196, 196, 196);
 }
@@ -41,39 +40,29 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border: 2px solid orangered; */
-    /* background-color: rgba(255, 68, 0, 0.466); */
 }
 
 .brand-name {
     font-family: 'IM Fell Great Primer', serif;
     font-size: 1.3rem;
     padding: 0 15px;
-    /* border: 2px solid black; */
 }
 
 .logo-img {
     width: 90px;
     height: 90px;
-    /* border: 2px solid blue; */
 }
 
 .header-nav {
-    flex-basis: auto;
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    /* border: 2px solid rgb(0, 100, 17); */
-    /* background-color: rgba(1, 148, 25, 0.479); */
     margin-top: 20px;
 }
 
 .nav-link {
-    text-decoration: none;
     color: black;
-    /* border: 1px solid red; */
-    /* width: 130px; */
+    text-decoration: none;
     text-align: center;
     padding: 5px 15px;
     transition: all 0.2s;
@@ -86,23 +75,18 @@ header {
 
 /* --- MAIN CONTENT AREA --- */
 main {
-    /* background-color:lightseagreen; */
     margin-top: 169px;
     padding-top: 20px;
 }
 
 .page-heading {
-    margin-top: 25px;
-    margin-bottom: 40px;
-    padding: 0 15px;
     text-align: center;
-    /* border: 2px solid orchid; */
-    /* background-color: rgba(218, 112, 214, 0.479); */
+    padding: 0 15px;
+    margin: 25px 0 40px 0;
 }
 
 .product-title {
     font-family: 'Homemade Apple', cursive;
-    /* border: 1px solid blue; */
     font-size: 2rem;
 }
 
@@ -110,9 +94,6 @@ main {
 .features {
     width: 100%;
     max-width: 800px;
-    height: auto;
-    /* border: 2px solid yellow; */
-    /* background-color: rgba(255, 255, 0, 0.493); */
     padding: 0 15px;
     margin: 0 auto 60px auto;
 }
@@ -146,14 +127,14 @@ main {
 }
 
 
-/* --- HOW IT WORKS SECTION --- */
+/* --- "HOW IT WORKS" SECTION --- */
 .how-container {
     text-align: center;
 }
 
 .how-heading {
-    font-weight: 400;
     font-size: 1.5rem;
+    font-weight: 400;
     text-align: center;
     margin-bottom: 25px;
 }
@@ -161,9 +142,6 @@ main {
 .video {
     width: 100%;
     max-width: 560px;
-    /* height: auto; */
-    /* border: 2px solid lime;
-    background-color: rgba(0, 255, 0, 0.5); */
     margin-bottom: 60px;
 }
 
@@ -172,28 +150,22 @@ main {
     width: 100%;
     max-width: 1150px;
     height: auto;
-    /* border: 2px solid purple; */
-    /* background-color: rgba(128, 0, 128, 0.356); */
-    margin-bottom: 60px;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 0 auto 60px auto;
     padding: 0 15px;
 }
 
 .plan {
-    min-width: 300px;
-    max-width: 300px;
-    /* width: 300px; */
-    height: auto;
-    padding: 15px 20px;
     background-color: rgb(250, 250, 250);
-    border: 1px solid rgb(196, 196, 196);
-    border-radius: 5px;
-    margin: 0 auto 30px auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    min-width: 300px;
+    max-width: 300px;
+    border: 1px solid rgb(196, 196, 196);
+    border-radius: 5px;
+    padding: 15px 20px;
+    margin: 0 auto 30px auto;
 }
 
 .plans-heading {
@@ -207,40 +179,34 @@ main {
     width: 100%;
     display: flex;
     justify-content: center;
-    /* border: 1px solid blue; */
 }
 
 .plan-icon {
     width: 45px;
     height: 45px;
-    /* border: 1px solid red; */
 }
 
 .plan-title {
     font-family: 'Homemade Apple', cursive;
     font-size: 1.4rem;
     padding: 0 15px;
-    /* border: 1px solid black; */
-    /* padding-top: 10px; */
 }
 
 .plan-description {
     margin: 25px 0 15px 0;
-    /* border: 1px solid red; */
 }
 
 .plan-price {
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 20px;
-    /* border: 1px solid green; */
 }
 
 .plan-btn {
-    padding: 8px 40px;
+    background-color: #ffd578;
     border: 1px solid transparent;
     border-radius: 5px;
-    background-color: #ffd578;
+    padding: 8px 40px;
     transition: all 0.2s;
 }
 
@@ -255,28 +221,27 @@ main {
 
 
 /* --- ORDER FORM SECTION --- */
-.order {
+.sign-up {
     margin: 0 15px 60px 15px;
 }
 
-.order-heading {
+.sign-up-heading {
     font-size: 1.5rem;
     font-weight: 400;
     text-align: center;
     margin-bottom: 30px;
 }
 
-.order-form {
-    max-width: 600px;
-    margin: 0 auto;
+.sign-up-form {
+    background-color: rgb(250, 250, 250);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: auto;
+    max-width: 600px;
     border: 1px solid transparent;
     border-radius: 5px;
-    background-color: rgb(250, 250, 250);
     padding: 20px;
+    margin: 0 auto;
 }
 
 .input-group {
@@ -286,12 +251,11 @@ main {
 .form-input {
     display: block;
     width: 100%;
-    padding: 10px 8px;
-    margin-top: 8px;
     border: 1px solid rgb(230, 230, 230);
     border-radius: 5px;
     outline: none;
-
+    padding: 10px 8px;
+    margin-top: 8px;
 }
 
 .form-input:focus {
@@ -299,10 +263,10 @@ main {
 }
 
 .submit-btn {
-    padding: 10px;
+    background-color: #8CD4A2;
     border: 1px solid transparent;
     border-radius: 5px;
-    background-color: #8CD4A2;
+    padding: 10px;
     transition: all 0.2s;
 }
 
@@ -314,29 +278,37 @@ main {
 
 /* --- FOOTER --- */
 footer {
-    height: 100px;
-    border-top: 1px solid rgb(196, 196, 196);
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 15px;
     background-color: #4d4d4d;
-
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 15px;
+    border-top: 1px solid rgb(196, 196, 196);
 }
 
 .footer-link {
-    /* border: 1px solid red; */
-    padding: 5px 10px;
-    text-decoration: none;
     color: white;
+    text-decoration: none;
+    padding: 5px 10px;
 }
 
 .footer-link:hover {
     text-decoration: underline;
 }
 
+.icon-link {
+    text-decoration: none;
+    color: #ffd578;
+}
 
-/* --- STYLES MIN-WIDTH 992px --- */
+.icon-link:hover {
+    text-decoration: underline;
+}
+
+
+/* --- STYLES @ MIN-WIDTH 992px --- */
 
 @media all and (min-width: 992px) {
     header {
